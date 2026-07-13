@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Craft Pty Ltd — Crafted with Precision. Installed with Pride.</title>
+<meta name="description" content="Mon Craft Pty Ltd — Brisbane's premium joinery and cabinet installation specialists. Precision craftsmanship for luxury residential and commercial projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/svg+xml" href="img/logo.svg">
+</head>
+<body>
+
+<!-- Spirit-level loader -->
+<div id="loader">
+  <div class="level">
+    <div class="vial"><div class="bubble"></div></div>
+  </div>
+  <div class="loader-check">✓ Level</div>
+  <div class="loader-msg">Mon Craft</div>
+</div>
+
+<!-- Tape-measure scroll progress -->
+<div id="tape"></div>
+
+<header class="site-header">
+  <div class="bar">
+    <nav class="nav-wrap">
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" alt="Mon Craft logo" class="logo-img">
+        <div class="logo-text">Mon <span>Craft</span></div>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="join.html">Join Us</a></li>
+        <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <span class="kicker">Brisbane · Joinery &amp; Cabinet Installation</span>
+    <h1>Crafted with <em>Precision.</em><br>Installed with <em>Pride.</em></h1>
+    <p class="lead">Mon Craft is a specialist installation-only company. We don't manufacture or supply — we complete the final, critical stage for joinery manufacturers, builders and developers who believe the last millimetre matters as much as the first.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      <a href="projects.html" class="btn btn-ghost">View Projects</a>
+    </div>
+  </div>
+
+  <!-- Modern tape measure extending across the screen -->
+  <svg class="hero-tape" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="bladeGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fbf8f1"/>
+        <stop offset="1" stop-color="#eae3d3"/>
+      </linearGradient>
+      <linearGradient id="caseGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#332d26"/>
+        <stop offset="1" stop-color="#17130f"/>
+      </linearGradient>
+      <pattern id="ticks" width="50" height="24" patternUnits="userSpaceOnUse" patternTransform="translate(0 40)">
+        <line x1="0" y1="0" x2="0" y2="12" stroke="#2C2620" stroke-width="1.4"/>
+        <line x1="10" y1="0" x2="10" y2="6" stroke="#8a8073" stroke-width="1"/>
+        <line x1="20" y1="0" x2="20" y2="6" stroke="#8a8073" stroke-width="1"/>
+        <line x1="30" y1="0" x2="30" y2="6" stroke="#8a8073" stroke-width="1"/>
+        <line x1="40" y1="0" x2="40" y2="6" stroke="#8a8073" stroke-width="1"/>
+        <rect x="0" y="21.5" width="50" height="2.5" fill="#CDAA5A"/>
+      </pattern>
+    </defs>
+    <!-- slim ivory blade with fine metric ticks and gold edge -->
+    <rect id="tape-line" x="0" y="40" width="18%" height="24" rx="3" fill="url(#bladeGrad)"/>
+    <rect id="tape-ticks" x="0" y="40" width="18%" height="24" fill="url(#ticks)"/>
+    <!-- minimal matte-black case with gold ring -->
+    <svg id="tape-body" x="18%" y="0" width="130" height="90" overflow="visible">
+      <rect x="-12" y="16" width="114" height="62" rx="24" fill="url(#caseGrad)"/>
+      <rect x="-6" y="21" width="102" height="10" rx="5" fill="#ffffff" opacity="0.06"/>
+      <circle cx="45" cy="47" r="15" fill="none" stroke="#CDAA5A" stroke-width="2.5"/>
+      <circle cx="45" cy="47" r="4" fill="#CDAA5A"/>
+      <rect x="36" y="9" width="18" height="9" rx="4.5" fill="#CDAA5A"/>
+    </svg>
+  </svg>
+
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- ============ INTRO / ABOUT PREVIEW ============ -->
+<section class="section blueprint">
+  <div class="container grid-2" style="align-items:center;">
+    <div class="reveal-drawer">
+      <span class="kicker">The Mon Craft Difference</span>
+      <h2 class="drawn">Joinery Deserves a <em>Craftsman's</em> Hand</h2>
+      <p class="lead" style="margin-top:26px;">Beautiful cabinetry is only as good as its installation. We exist for that final, critical stage — where drawings become rooms, and precision becomes something you can feel every time a drawer glides closed. We supply nothing but skill.</p>
+      <p class="lead" style="margin-top:18px;">Based in Brisbane, we are the installation arm trusted by joinery companies, builders and developers. Your cabinetry is manufactured by the experts who made it — and installed by ours, to furniture-grade tolerances.</p>
+      <a href="about.html" class="btn btn-wood" style="margin-top:38px;">Our Story</a>
+    </div>
+    <div class="sq-frame reveal-drawer-r">
+      <div class="img"><div class="ph ph-kitchen">Luxury Kitchen Installation</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES PREVIEW ============ -->
+<section class="section section-cream2">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="kicker">What We Do</span>
+      <h2 class="drawn">Services</h2>
+      <p class="lead">Three disciplines. One standard: perfect.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal d1">
+        <div class="card-icon">◨</div>
+        <h3>Residential Joinery</h3>
+        <p>Installation of supplied kitchens, walk-in robes, vanities and bespoke cabinetry — fitted with the care of the maker and the discipline of the builder.</p>
+        <a href="services.html" class="card-link">Explore</a>
+      </div>
+      <div class="card reveal d2">
+        <div class="card-icon">▤</div>
+        <h3>Commercial Fit-Outs</h3>
+        <p>Installation of reception counters, wall panelling and workplace joinery supplied by your manufacturer — for spaces where first impressions are measured in millimetres.</p>
+        <a href="services.html" class="card-link">Explore</a>
+      </div>
+      <div class="card reveal d3">
+        <div class="card-icon">▦</div>
+        <h3>Multi-Residential</h3>
+        <p>Staged, high-volume installation of supplied joinery across apartment and townhouse projects — without ever compromising the finish.</p>
+        <a href="services.html" class="card-link">Explore</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section blueprint">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="kicker">Our Process</span>
+      <h2 class="drawn">From Blueprint to <em>Beautiful</em></h2>
+      <p class="lead">Every installation follows the same measured path.</p>
+    </div>
+    <div class="process">
+      <div class="pstep reveal d1">
+        <div class="dot">01</div>
+        <h3>Measure</h3>
+        <p>Laser-verified site measures and frame checks before anything is manufactured.</p>
+      </div>
+      <div class="pstep reveal d2">
+        <div class="dot">02</div>
+        <h3>Plan</h3>
+        <p>Installation sequenced around your program, your trades and your handover date.</p>
+      </div>
+      <div class="pstep reveal d3">
+        <div class="dot">03</div>
+        <h3>Install</h3>
+        <p>Level, plumb, scribed and aligned — by installers who think like cabinetmakers.</p>
+      </div>
+      <div class="pstep reveal d4">
+        <div class="dot">04</div>
+        <h3>Perfect</h3>
+        <p>Documented QA, spotless site and a defect-free handover, every time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="stats">
+      <div class="reveal d1"><div class="stat-num" data-count="15" data-suffix="+">15<sup>+</sup></div><div class="stat-label">Years of Craft</div></div>
+      <div class="reveal d2"><div class="stat-num" data-count="500" data-suffix="+">500<sup>+</sup></div><div class="stat-label">Projects Delivered</div></div>
+      <div class="reveal d3"><div class="stat-num" data-count="100" data-suffix="%">100<sup>%</sup></div><div class="stat-label">Licensed &amp; Insured</div></div>
+      <div class="reveal d4"><div class="stat-num" data-count="1" data-suffix="mm">1<sup>mm</sup></div><div class="stat-label">Our Tolerance</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section">
+  <div class="container grid-2" style="align-items:center;">
+    <div class="sq-frame reveal-drawer">
+      <div class="img"><div class="ph ph-sage">Detail · Walnut &amp; Sage</div></div>
+    </div>
+    <div class="reveal-drawer-r">
+      <span class="kicker">Why Choose Us</span>
+      <h2 class="drawn">Measured Twice. <em>Trusted</em> Always.</h2>
+      <ul class="check-list" style="margin-top:30px;">
+        <li>Furniture-grade tolerances on every installation</li>
+        <li>Fully licensed and insured for construction sites</li>
+        <li>We protect your program — no hold-ups for following trades</li>
+        <li>One dedicated team from site measure to handover</li>
+        <li>QA documentation and photographic sign-off included</li>
+      </ul>
+      <a href="contact.html" class="btn btn-gold" style="margin-top:38px;">Start Your Project</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section section-sage">
+  <div class="container">
+    <div class="section-head center reveal">
+      <span class="kicker">Testimonials</span>
+      <h2 class="drawn">What Our Clients Say</h2>
+    </div>
+    <div class="grid-3">
+      <div class="quote-card reveal d1">
+        <p>The joinery arrived beautiful — Mon Craft made it perfect. Every shadow line, every reveal, absolutely consistent through the entire house.</p>
+        <div class="who">Sarah M. <span>Architect, New Farm Residence</span></div>
+      </div>
+      <div class="quote-card reveal d2">
+        <p>We build premium homes and Mon Craft is the only installer we trust with our kitchens. They've never missed a program date in four years.</p>
+        <div class="who">David R. <span>Director, Boutique Builder</span></div>
+      </div>
+      <div class="quote-card reveal d3">
+        <p>86 apartments, staged handovers, zero joinery defects at PC. That simply doesn't happen — except it did.</p>
+        <div class="who">Melissa T. <span>Project Manager, Developer</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band">
+  <div class="container reveal">
+    <span class="kicker">Request a Quote</span>
+    <h2>Let's Build Something <em>Exceptional</em></h2>
+    <p>Send us your drawings — we'll respond within 24 hours.</p>
+    <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="Mon Craft logo" class="logo-img">
+          <div class="logo-text">Mon <span>Craft</span></div>
+        </a>
+        <p>Specialist installation only — completing the supply of Australia's finest joinery manufacturers on Brisbane's best projects.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="join.html">Join Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Residential Joinery</a></li>
+          <li><a href="services.html">Commercial Fit-Outs</a></li>
+          <li><a href="services.html">Multi-Residential</a></li>
+          <li><a href="services.html">Shopfitting</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+61400000000">0400 000 000</a></li>
+          <li><a href="mailto:info@moncraft.com.au">info@moncraft.com.au</a></li>
+          <li>Brisbane &amp; South East Queensland</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Mon Craft Pty Ltd. All rights reserved.</span>
+      <span>ABN 00 000 000 000</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
