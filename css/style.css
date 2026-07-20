@@ -605,7 +605,7 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
   background-size: cover !important;
   background-position: center !important;
 }
-.ph-kitchen { background: url("https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80&auto=format&fit=crop") , linear-gradient(150deg, #8a6a52 0%, #6B4E3A 45%, #4E3828 100%); }
+.ph-kitchen { background: url("https://images.unsplash.com/photo-1556911220-bff31c812dba?w=900&h=1100&q=80&auto=format&fit=crop") , linear-gradient(150deg, #8a6a52 0%, #6B4E3A 45%, #4E3828 100%); }
 .ph-sage { background: url("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #96a894, #7C8F7A 55%, #5f7060); }
 .ph-dark { background: linear-gradient(150deg, #443628, #2C2620); }
 .ph-blend { background: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #7C8F7A 0%, #6B4E3A 70%); }
