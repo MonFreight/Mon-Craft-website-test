@@ -1,32 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -24 200 202">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -26 200 206">
   <defs>
     <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#7a5434"/>
-      <stop offset="1" stop-color="#59391f"/>
+      <stop offset="0" stop-color="#7d5533"/>
+      <stop offset="0.55" stop-color="#6B4E3A"/>
+      <stop offset="1" stop-color="#4e3115"/>
     </linearGradient>
     <linearGradient id="sage" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#8b9d88"/>
-      <stop offset="1" stop-color="#6f8270"/>
+      <stop offset="0" stop-color="#93a390"/>
+      <stop offset="1" stop-color="#78897a"/>
     </linearGradient>
     <linearGradient id="goldg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#e3c887"/>
-      <stop offset="0.5" stop-color="#CDAA5A"/>
-      <stop offset="1" stop-color="#b08f45"/>
+      <stop offset="0" stop-color="#e8cd8b"/>
+      <stop offset="0.45" stop-color="#d4af5e"/>
+      <stop offset="1" stop-color="#c19a3f"/>
     </linearGradient>
     <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.02 0.6" numOctaves="3" seed="4" result="n"/>
-      <feColorMatrix in="n" values="0 0 0 0 0.28 0 0 0 0 0.17 0 0 0 0 0.08 0.45 0 0 0 0" result="c"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.45" numOctaves="4" seed="7" result="n"/>
+      <feColorMatrix in="n" values="0 0 0 0 0.24 0 0 0 0 0.13 0 0 0 0 0.05 0.55 0 0 0 0" result="c"/>
+      <feComposite in="c" in2="SourceGraphic" operator="in" result="tex"/>
+      <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tex"/></feMerge>
+    </filter>
+    <filter id="goldtex" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.3 0.3" numOctaves="2" seed="3" result="n"/>
+      <feColorMatrix in="n" values="0 0 0 0 1 0 0 0 0 0.95 0 0 0 0 0.75 0.25 0 0 0 0" result="c"/>
       <feComposite in="c" in2="SourceGraphic" operator="in" result="tex"/>
       <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="tex"/></feMerge>
     </filter>
   </defs>
-  <!-- left panel: wood M -->
+
+  <!-- left panel: timber M (three legs, hanging centre leg) -->
   <g transform="translate(100,90) skewY(14) translate(-100,-90)">
-    <path d="M25 22 H95 V158 H75 V57 H45 V158 H25 Z" fill="url(#wood)" filter="url(#grain)"/>
+    <path d="M20 20 H92 V158 H75 V54 H64 V132 H48 V54 H37 V158 H20 Z"
+          fill="url(#wood)" filter="url(#grain)"/>
   </g>
-  <!-- right panel: gold accent + sage C -->
+
+  <!-- right panel: gold band + sage C -->
   <g transform="translate(100,90) skewY(-14) translate(-100,-90)">
-    <rect x="105" y="2" width="70" height="13" fill="url(#goldg)"/>
-    <path d="M105 22 H175 V57 H135 V123 H175 V158 H105 Z" fill="url(#sage)"/>
+    <polygon points="104,1 180,1 180,15 104,17" fill="url(#goldg)" filter="url(#goldtex)"/>
+    <path d="M104 24 H180 V60 H136 V122 H180 V158 H104 Z" fill="url(#sage)"/>
   </g>
 </svg>
