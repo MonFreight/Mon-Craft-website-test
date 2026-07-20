@@ -97,6 +97,36 @@
     heroTape();
   }
 
+  /* ---------- AJAX forms (Formspree) with inline success message ---------- */
+  document.querySelectorAll("form[data-endpoint]").forEach(function (form) {
+    var endpoint = form.getAttribute("data-endpoint");
+    if (!endpoint) return; // not configured yet — falls back to mailto
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var oldLabel = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+      fetch(endpoint, {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: new FormData(form)
+      })
+        .then(function (r) {
+          if (!r.ok) throw new Error("send failed");
+          var msg = form.getAttribute("data-success") ||
+            "Thank you — we've received your enquiry and will get back to you as soon as possible.";
+          form.innerHTML =
+            '<div class="form-success"><div class="tick">✓</div><h3>Received</h3><p>' + msg + "</p></div>";
+        })
+        .catch(function () {
+          btn.disabled = false;
+          btn.textContent = oldLabel;
+          alert("Sorry — something went wrong. Please email info@moncraft.com.au directly.");
+        });
+    });
+  });
+
   /* ---------- Wood shavings (very subtle, hero only) ---------- */
   if (hero && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     for (var i = 0; i < 6; i++) {
