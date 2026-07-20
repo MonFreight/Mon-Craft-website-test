@@ -226,7 +226,7 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
 }
 
 /* ---------- Realistic woodgrain panels on brown surfaces ---------- */
-.hero::after, .page-hero::after, .section-dark::after, .cta-band::after {
+.section-dark::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -405,8 +405,8 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(1100px 600px at 82% 18%, rgba(205,170,90,0.16), transparent 60%),
-    radial-gradient(900px 700px at 12% 85%, rgba(124,143,122,0.14), transparent 55%),
+    linear-gradient(115deg, rgba(30,23,16,0.86) 25%, rgba(30,23,16,0.55) 60%, rgba(30,23,16,0.72)),
+    url("https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1920&q=80&auto=format&fit=crop") center/cover no-repeat,
     linear-gradient(165deg, #3e3022 0%, #52402c 45%, #2e2318 100%);
   color: var(--cream);
   padding: 160px 0 120px;
@@ -592,7 +592,7 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
 .sq-frame.in::before { opacity: 1; transform: translate(0,0); }
 .sq-frame.in::after { opacity: 1; transform: translate(0,0); }
 
-/* placeholder "photography" */
+/* photography blocks (stock imagery with gradient fallback) */
 .ph {
   height: 420px;
   display: grid;
@@ -601,14 +601,24 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: rgba(250,248,244,0.75);
+  color: rgba(250,248,244,0);
+  background-size: cover !important;
+  background-position: center !important;
 }
-.ph-kitchen { background: linear-gradient(150deg, #8a6a52 0%, #6B4E3A 45%, #4E3828 100%); }
-.ph-sage { background: linear-gradient(150deg, #96a894, #7C8F7A 55%, #5f7060); }
+.ph-kitchen { background: url("https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1200&q=80&auto=format&fit=crop") , linear-gradient(150deg, #8a6a52 0%, #6B4E3A 45%, #4E3828 100%); }
+.ph-sage { background: url("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #96a894, #7C8F7A 55%, #5f7060); }
 .ph-dark { background: linear-gradient(150deg, #443628, #2C2620); }
-.ph-blend { background: linear-gradient(150deg, #7C8F7A 0%, #6B4E3A 70%); }
+.ph-blend { background: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #7C8F7A 0%, #6B4E3A 70%); }
 .ph-warm { background: linear-gradient(150deg, #CDAA5A 0%, #8a6a52 60%, #6B4E3A); }
 .ph-stone { background: linear-gradient(150deg, #a99f90, #6f665a); }
+
+/* project gallery photos */
+.ph-p1 { background: url("https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #8a6a52, #4E3828); }
+.ph-p2 { background: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #443628, #2C2620); }
+.ph-p3 { background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #7C8F7A, #6B4E3A); }
+.ph-p4 { background: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #CDAA5A, #6B4E3A); }
+.ph-p5 { background: url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #a99f90, #6f665a); }
+.ph-p6 { background: url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #96a894, #5f7060); }
 
 /* ---------- Projects: blueprint → finished ---------- */
 .project {
@@ -767,7 +777,8 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
   padding: 130px 0;
   text-align: center;
   background:
-    radial-gradient(900px 400px at 50% 0%, rgba(205,170,90,0.16), transparent 65%),
+    linear-gradient(rgba(30,23,16,0.82), rgba(30,23,16,0.86)),
+    url("https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1920&q=70&auto=format&fit=crop") center/cover fixed no-repeat,
     linear-gradient(160deg, #3e3022, #2e2318);
   color: var(--cream);
 }

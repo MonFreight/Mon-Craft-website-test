@@ -69,14 +69,14 @@
     });
   }
 
-  /* ---------- Hero: subtle wood-grain parallax on mouse ---------- */
+  /* ---------- Hero photo: subtle parallax on mouse ---------- */
   var hero = document.querySelector(".hero");
   if (hero && window.matchMedia("(pointer: fine)").matches) {
     hero.addEventListener("mousemove", function (ev) {
-      var x = (ev.clientX / window.innerWidth - 0.5) * 12;
-      var y = (ev.clientY / window.innerHeight - 0.5) * 8;
+      var x = (ev.clientX / window.innerWidth - 0.5) * 10;
+      var y = (ev.clientY / window.innerHeight - 0.5) * 6;
       hero.style.backgroundPosition =
-        "calc(82% + " + x + "px) calc(18% + " + y + "px), calc(12% - " + x + "px) calc(85% - " + y + "px), 0 0";
+        "0 0, calc(50% + " + x + "px) calc(50% + " + y + "px), 0 0";
     });
   }
 
