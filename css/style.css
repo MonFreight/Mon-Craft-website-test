@@ -605,7 +605,7 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
   background-size: cover !important;
   background-position: center !important;
 }
-.ph-kitchen { background: url("https://images.pexels.com/photos/18285890/pexels-photo-18285890.jpeg?auto=compress&cs=tinysrgb&w=900&h=1100&fit=crop") , linear-gradient(150deg, #8a6a52 0%, #6B4E3A 45%, #4E3828 100%); }
+.ph-kitchen { background: url("https://images.pexels.com/photos/35021550/pexels-photo-35021550.jpeg?auto=compress&cs=tinysrgb&w=900&h=1100&fit=crop") , linear-gradient(150deg, #8a6a52 0%, #6B4E3A 45%, #4E3828 100%); }
 .ph-sage { background: url("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #96a894, #7C8F7A 55%, #5f7060); }
 .ph-dark { background: linear-gradient(150deg, #443628, #2C2620); }
 .ph-blend { background: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #7C8F7A 0%, #6B4E3A 70%); }
@@ -613,7 +613,7 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
 .ph-stone { background: linear-gradient(150deg, #a99f90, #6f665a); }
 
 /* project gallery photos */
-.ph-p1 { background: url("https://images.pexels.com/photos/18285890/pexels-photo-18285890.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop"), linear-gradient(150deg, #8a6a52, #4E3828); }
+.ph-p1 { background: url("https://images.pexels.com/photos/35021550/pexels-photo-35021550.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop"), linear-gradient(150deg, #8a6a52, #4E3828); }
 .ph-p2 { background: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #443628, #2C2620); }
 .ph-p3 { background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #7C8F7A, #6B4E3A); }
 .ph-p4 { background: url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #CDAA5A, #6B4E3A); }
