@@ -608,7 +608,7 @@ h1 em, h2 em { font-style: italic; color: var(--wood); }
 .ph-kitchen { background: url("https://images.pexels.com/photos/35021550/pexels-photo-35021550.jpeg?auto=compress&cs=tinysrgb&w=900&h=1100&fit=crop") , linear-gradient(150deg, #8a6a52 0%, #6B4E3A 45%, #4E3828 100%); }
 .ph-sage { background: url("https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80&auto=format&fit=crop"), linear-gradient(150deg, #96a894, #7C8F7A 55%, #5f7060); }
 .ph-dark { background: linear-gradient(150deg, #443628, #2C2620); }
-.ph-blend { background: url("https://images.pexels.com/photos/5691541/pexels-photo-5691541.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop"), linear-gradient(150deg, #7C8F7A 0%, #6B4E3A 70%); }
+.ph-blend { background: url("https://images.pexels.com/photos/35189705/pexels-photo-35189705.jpeg?auto=compress&cs=tinysrgb&w=1200&fit=crop"), linear-gradient(150deg, #7C8F7A 0%, #6B4E3A 70%); }
 .ph-warm { background: linear-gradient(150deg, #CDAA5A 0%, #8a6a52 60%, #6B4E3A); }
 .ph-stone { background: linear-gradient(150deg, #a99f90, #6f665a); }
 
